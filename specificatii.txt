@@ -1,0 +1,3 @@
+Acesta este fisierul creat.
+Are 3 randuri.
+Va fi adaugat in branch-ul development.
