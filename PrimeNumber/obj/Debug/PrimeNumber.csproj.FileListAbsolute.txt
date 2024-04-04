@@ -1,0 +1,10 @@
+C:\student\IXD\PrimeNumber\bin\Debug\PrimeNumber.exe.config
+C:\student\IXD\PrimeNumber\bin\Debug\PrimeNumber.exe
+C:\student\IXD\PrimeNumber\bin\Debug\PrimeNumber.pdb
+C:\student\IXD\PrimeNumber\obj\Debug\PrimeNumber.csproj.AssemblyReference.cache
+C:\student\IXD\PrimeNumber\obj\Debug\PrimeNumber.Properties.Resources.resources
+C:\student\IXD\PrimeNumber\obj\Debug\PrimeNumber.csproj.GenerateResource.cache
+C:\student\IXD\PrimeNumber\obj\Debug\PrimeNumber.csproj.CoreCompileInputs.cache
+C:\student\IXD\PrimeNumber\obj\Debug\PrimeNumber.exe
+C:\student\IXD\PrimeNumber\obj\Debug\PrimeNumber.pdb
+C:\student\IXD\PrimeNumber\obj\Debug\PrimeNumber.PrimeNumberForm.resources
