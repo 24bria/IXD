@@ -1,0 +1,10 @@
+C:\student\IXD\MathQuiz\bin\Debug\MathQuiz.exe.config
+C:\student\IXD\MathQuiz\bin\Debug\MathQuiz.exe
+C:\student\IXD\MathQuiz\bin\Debug\MathQuiz.pdb
+C:\student\IXD\MathQuiz\obj\Debug\MathQuiz.csproj.AssemblyReference.cache
+C:\student\IXD\MathQuiz\obj\Debug\MathQuiz.Form1.resources
+C:\student\IXD\MathQuiz\obj\Debug\MathQuiz.Properties.Resources.resources
+C:\student\IXD\MathQuiz\obj\Debug\MathQuiz.csproj.GenerateResource.cache
+C:\student\IXD\MathQuiz\obj\Debug\MathQuiz.csproj.CoreCompileInputs.cache
+C:\student\IXD\MathQuiz\obj\Debug\MathQuiz.exe
+C:\student\IXD\MathQuiz\obj\Debug\MathQuiz.pdb
