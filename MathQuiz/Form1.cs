@@ -12,6 +12,10 @@ namespace MathQuiz
 {
     public partial class Form1 : Form
     {
+        public Form1()
+        {
+            InitializeComponent();
+        }
         Random randomizer = new Random();
         int addend1;
         int addend2;
@@ -19,11 +23,17 @@ namespace MathQuiz
         int subtrahend;
         int multiplicand;
         int multiplier;
-        int divident;
+        int dividend;
         int divisor;
+        int timeLeft;
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+        private void startButton_Click(object sender, EventArgs e)
+        {
+            StartTheQuiz();
+            startButton.Enabled = false;
         }
         public void StartTheQuiz()
         {
@@ -44,17 +54,50 @@ namespace MathQuiz
             product.Value = 0;
             divisor = randomizer.Next(2, 11);
             int temporaryQuotient = randomizer.Next(2, 11);
-            divident = divisor * temporaryQuotient;
-            dividedLeftLabel.Text = divident.ToString();
+            dividend = divisor * temporaryQuotient;
+            dividedLeftLabel.Text = dividend.ToString();
             dividedRightLabel.Text = divisor.ToString();
             quotient.Value = 0;
-            
+            timeLeft = 30;
+            timeLabel.Text = "30 seconds";
+            timer1.Start();
+        }
+        private bool CheckTheAnswer()
+        {
+            if ((addend1 + addend2 == sum.Value)
+                && (minuend - subtrahend == difference.Value)
+                && (multiplicand * multiplier == product.Value)
+                && (dividend / divisor == quotient.Value))
+                return true;
+            else
+                return false;
         }
 
-        private void startButton_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            StartTheQuiz();
-            startButton.Enabled = false;
+            if (CheckTheAnswer())
+            {
+                timer1.Stop();
+                MessageBox.Show("You got all the answers right!",
+                                "Congratulations!");
+                startButton.Enabled = true;
+            }
+            else if (timeLeft > 0)
+            {
+                timeLeft = timeLeft - 1;
+                timeLabel.Text = timeLeft + " seconds";
+            }
+            else
+            {
+                timer1.Stop();
+                timeLabel.Text = "Time's up!";
+                MessageBox.Show("You didn't finish in time.", "Sorry!");
+                sum.Value = addend1 + addend2;
+                difference.Value = minuend - subtrahend;
+                product.Value = multiplicand * multiplier;
+                quotient.Value = dividend / divisor;
+                startButton.Enabled = true;
+            }
         }
     }
 }
